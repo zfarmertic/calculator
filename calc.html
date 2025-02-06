@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <textarea name="" id="display"></textarea>
+        <div class="num">
+            <button onclick="clearDisplay()" class="del">C</button>
+            <button onclick="appendDisplay('%')">%</button>
+            <button onclick="appendDisplay('⌫')"><img src="assets/removed.png" alt="" style="width: 20px;"></button>
+            <button onclick="appendDisplay('/')" class="ope">&divide;</button>
+        </div>
+        <div class="num">
+            <button onclick="appendDisplay('7')">7</button>
+            <button onclick="appendDisplay('8')">8</button>
+            <button onclick="appendDisplay('9')">9</button>
+            <button onclick="appendDisplay('x')" class="ope">x</button>
+        </div>
+        <div class="num">
+            <button onclick="appendDisplay('4')">4</button>
+            <button onclick="appendDisplay('5')">5</button>
+            <button onclick="appendDisplay('6')">6</button>
+            <button onclick="appendDisplay('-')" class="ope">&minus;</button>
+        </div>
+        <div class="num">
+            <button onclick="appendDisplay('1')">1</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button onclick="appendDisplay('+')" class="ope">+</button>
+        </div>
+        <div class="num">
+            <button onclick="appendDisplay('0')">0</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button onclick="solveAnswer()" class="equal">=</button>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
