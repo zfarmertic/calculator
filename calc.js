@@ -14,7 +14,7 @@ const clearDisplay = () =>{
 const solveAnswer = () =>{
             try {
                 
-                let expression = display.value.replace('÷', '/').replace('x', '');
+                let expression = display.value.replace('÷', '/').replace('x', '*');
                 
                 display.value = eval(expression);
             } catch (e) {
